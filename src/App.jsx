@@ -6,6 +6,7 @@ import Stats from "./Component/Stats";
 import Tools from "./Component/Tools/Tools";
 import GetStart from "./Component/GetStart/GetStart";
 import Pricing from "./Component/Pricing";
+import Workflow from "./Component/Workflow";
 
 const fetchItems = async () => {
   const res = await fetch("/data.json");
@@ -42,7 +43,8 @@ function App() {
         />
       </Suspense>
       <GetStart />
-      <Pricing/>
+      <Pricing />
+      <Workflow />
     </>
   );
 }
