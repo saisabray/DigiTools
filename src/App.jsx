@@ -1,11 +1,13 @@
 import "./App.css";
+import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Navbar";
 
 function App() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <Banner/>
     </>
   );
 }
