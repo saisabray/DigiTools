@@ -16,7 +16,7 @@ const Cart = ({ subscribed, setSubscribed }) => {
   return (
     <div>
       {subscribed.length > 0 ? (
-        <div className="container mx-auto p-10 flex flex-col gap-4 text-start shadow-sm rounded-2xl">
+        <div className="container mx-auto p-5 md:p-10 flex flex-col gap-4 text-start shadow-sm rounded-2xl">
           <h2 className="text-[#101727] text-[24px] font-bold">Your Cart</h2>
 
           {subscribed.map((item, index) => (
@@ -30,7 +30,7 @@ const Cart = ({ subscribed, setSubscribed }) => {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-[#101727] text-[20px]">
+                  <h3 className="font-semibold text-[#101727] text-base md:text-[20px]">
                     {item.name}
                   </h3>
                   <p className="font-medium text-base text-[#627382]">
@@ -40,7 +40,7 @@ const Cart = ({ subscribed, setSubscribed }) => {
               </div>
 
               <button
-                className="border-1 border-gray-200 rounded-full flex justify-center items-center w-[40px] h-[40px]"
+                className="border-1 border-gray-200 rounded-full flex justify-center items-center w-[40px] h-[40px] hover:cursor-pointer hover:bg-gray-300"
                 onClick={() => handleRemove(item)}
               >
                 <AiOutlineDelete />
@@ -57,7 +57,7 @@ const Cart = ({ subscribed, setSubscribed }) => {
           </button>
         </div>
       ) : (
-        <div className="container mx-auto p-10 flex gap-3 flex-col justify-center items-center h-[350px] shadow-sm rounded-2xl">
+        <div className="container mx-auto p-5 md:p-10 flex gap-3 flex-col justify-center items-center h-[350px] shadow-sm rounded-2xl">
           <h1 className="font-bold text-2xl text-gray-300">
             Your Cart Is Empty
           </h1>

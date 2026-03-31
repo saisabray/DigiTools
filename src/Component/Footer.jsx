@@ -4,7 +4,12 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-neutral text-neutral-content ">
-        <div className="footer sm:footer-horizontal p-20">
+        <div
+          className="footer flex-wrap
+        
+p-20
+        flex justify-between items-center "
+        >
           <nav className="flex flex-col gap-5">
             <h2 className="font-extrabold text-[36px]">DigiTools</h2>
             <p>
@@ -76,8 +81,10 @@ const Footer = () => {
           </nav>
         </div>
         <hr className="border-t border-gray-200 mx-5 sm:mx-10 lg:mx-20 " />
-        <div className="flex justify-between items-center gap-5 px-20 py-10">
-          <p>&copy;2026 Digitools. All rights reserved.</p>
+        <div className="block md:flex justify-between items-center gap-5 px-20 py-10">
+          <p className="mb-5 md:p-0">
+            &copy;2026 Digitools. All rights reserved.
+          </p>
           <div className="flex gap-10">
             <p>Privacy Policy </p>
             <p>Terms of Service </p>

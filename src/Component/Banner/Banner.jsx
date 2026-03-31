@@ -4,28 +4,32 @@ import DemoImg from "../../assets/main-assets/Play.png";
 
 const Banner = () => {
   return (
-    <div className="hero  min-h-screen  ">
-      <div className="container flex justify-between items-center flex-col lg:flex-row-reverse">
-        <img className="drop-shadow-xl ml-30 px-5" src={BannerImg} />
-        <div>
-          <h1 className="text-5xl font-bold">
-            Supercharge YourDigital Workflow
+    <div className="hero min-h-screen px-5 md:px-10">
+      <div className="container mx-auto flex flex-col lg:flex-row-reverse md:my-10 items-center justify-between gap-10">
+        <img
+          className="w-full max-w-sm md:max-w-md lg:max-w-lg drop-shadow-xl"
+          src={BannerImg}
+          alt="Banner"
+        />
+
+        <div className="text-center lg:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            Supercharge Your Digital Workflow
           </h1>
-          <p className="py-6">
+
+          <p className="py-6 text-sm sm:text-base md:text-lg text-gray-600 max-w-xl">
             Access premium AI tools, design assets, templates, and productivity
-            software—all in one place. Start creating faster today. Explore
-            Products
+            software—all in one place. Start creating faster today.
           </p>
 
-          <div className="flex gap-6 flex-col sm:flex-row">
-            <button
-              className="btn bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white
-              font-semibold rounded-full"
-            >
+          <div className="flex gap-4 flex-col sm:flex-row justify-center lg:justify-start">
+            <button className="btn hover:scale-105 transition-transform duration-300 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full">
               Explore Products
             </button>
-            <button className="btn btn-outline btn-primary rounded-full">
-              <img src={DemoImg} alt="" /> Watch Demo{" "}
+
+            <button className="btn hover:scale-105 transition-transform duration-300 btn-outline btn-primary rounded-full flex items-center gap-2">
+              <img src={DemoImg} alt="Play icon" className="w-5 h-5" />
+              Watch Demo
             </button>
           </div>
         </div>

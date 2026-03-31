@@ -2,14 +2,14 @@ import React from "react";
 
 const Navbar = ({ subscribed, handleTabClick }) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm justify-between px-20 mx-auto sticky top-0 z-10 mb-">
+    <div className="navbar bg-base-100 shadow-sm justify-between md:px-20 mx-auto sticky top-0 z-10 pr-5">
       <div>
         <a className="btn btn-ghost text-3xl font-bold bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
           DigiTools
         </a>
       </div>
       <div>
-        <ul className="flex gap-5 text-[16px] font-semibold text-[#101727]">
+        <ul className="hidden lg:flex gap-5 text-[16px] font-semibold text-[#101727]">
           <li>
             <a href="#">Product</a>
           </li>
@@ -69,7 +69,7 @@ const Navbar = ({ subscribed, handleTabClick }) => {
             Login
           </a>
         </button>
-        <button className="btn rounded-3xl bg-gradient-to-r font-bold from-[#4F39F6] to-[#9514FA] text-white">
+        <button className="hidden lg:flex btn hover:scale-105 transition-transform duration-300 rounded-3xl bg-gradient-to-r font-bold from-[#4F39F6] to-[#9514FA] text-white">
           <a href="#">Get Started</a>
         </button>
       </div>

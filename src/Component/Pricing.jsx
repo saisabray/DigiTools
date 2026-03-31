@@ -4,15 +4,15 @@ const Pricing = () => {
   return (
     <div className=" container mx-auto py-30 ">
       <div className="flex flex-col gap-5 mb-20">
-        <h2 className="font-bold text-[48px] text-[#101727] text-center">
+        <h2 className="font-bold text-3xl md:text-[48px] text-[#101727] text-center">
           Simple, Transparent Pricing
         </h2>
         <p className="text-base text-[#627382] text-center">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-6 justify-items-center">
-        <div className="card w-96 bg-base-100 shadow-sm">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <div className="card hover:scale-105 transition-transform duration-300 w-96 bg-base-100 shadow-sm">
           <div className="card-body">
             <h2 className="text-3xl font-bold">Starter</h2>
             <p>Perfect for getting started</p>
@@ -99,7 +99,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white shadow-sm relative">
+        <div className="card hover:scale-105 transition-transform duration-300 w-96 bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white shadow-sm relative">
           <div className="card-body">
             <p className="absolute -top-3 left-[40%]">
               <span className="badge badge-xs badge-warning py-2.5 rounded-full">
@@ -225,7 +225,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-sm">
+        <div className="card hover:scale-105 transition-transform duration-300 w-96 bg-base-100 shadow-sm md:col-span-2 lg:col-span-1">
           <div className="card-body">
             <h2 className="text-3xl font-bold">Enterprise</h2>
             <p>For teams and businesses</p>
