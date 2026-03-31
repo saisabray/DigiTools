@@ -15,10 +15,16 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar subscribed={subscribed} />
       <Banner />
       <Stats />
-      <Suspense fallback="loading">
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center h-screen">
+            <span className="loading loading-spinner loading-xl"></span>
+          </div>
+        }
+      >
         <Tools
           itemsPromise={itemsPromise}
           subscribed={subscribed}

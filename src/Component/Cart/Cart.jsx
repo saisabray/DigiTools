@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AiOutlineDelete } from "react-icons/ai";
 
 const Cart = ({ subscribed, setSubscribed }) => {
   const [total, setTotal] = useState(0);
@@ -39,10 +40,10 @@ const Cart = ({ subscribed, setSubscribed }) => {
               </div>
 
               <button
-                className="btn btn-error"
+                className="border-1 border-gray-200 rounded-full flex justify-center items-center w-[40px] h-[40px]"
                 onClick={() => handleRemove(item)}
               >
-                Remove
+                <AiOutlineDelete />
               </button>
             </div>
           ))}
