@@ -12,10 +12,14 @@ const fetchItems = async () => {
 const itemsPromise = fetchItems();
 function App() {
   const [subscribed, setSubscribed] = useState([]);
+  const [activeTab, setActiveTab] = useState("Products");
+  const handleTabClick = (Tab) => {
+    setActiveTab(Tab);
+  };
 
   return (
     <>
-      <Navbar subscribed={subscribed} />
+      <Navbar subscribed={subscribed} handleTabClick={handleTabClick} />
       <Banner />
       <Stats />
       <Suspense
@@ -29,6 +33,9 @@ function App() {
           itemsPromise={itemsPromise}
           subscribed={subscribed}
           setSubscribed={setSubscribed}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          handleTabClick={handleTabClick}
         />
       </Suspense>
     </>

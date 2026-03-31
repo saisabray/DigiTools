@@ -2,12 +2,16 @@ import React, { use, useState } from "react";
 import Cart from "../Cart/Cart";
 import Products from "../Products/Products";
 
-const Tools = ({ itemsPromise, subscribed, setSubscribed }) => {
+const Tools = ({
+  itemsPromise,
+  subscribed,
+  setSubscribed,
+  activeTab,
+  setActiveTab,
+  handleTabClick,
+}) => {
   const items = use(itemsPromise);
-  const [activeTab, setActiveTab] = useState("Products");
-  const handleTabClick = (Tab) => {
-    setActiveTab(Tab);
-  };
+
   return (
     <div className="mb-40 container mx-auto text-center flex flex-col gap-5">
       <h1 className="text-[48px] font-extrabold text-[#101727]">

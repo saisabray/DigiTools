@@ -33,7 +33,7 @@
       "Regular updates",
       "Custom color themes"
     ],
-    "icon": "https://lucide.dev/icons/palette.svg"
+    "icon": "https://i.ibb.co.com/MxC7V3tY/tool-2.png"
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@
       "Advanced search filters",
       "Daily new uploads"
     ],
-    "icon": "https://lucide.dev/icons/image.svg"
+    "icon": "https://i.ibb.co.com/WvZ43Rw8/tool-3.png"
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
       "Real-time triggers",
       "Error tracking"
     ],
-    "icon": "https://lucide.dev/icons/settings.svg"
+    "icon": "https://i.ibb.co.com/XrXLztdt/tool4.png"
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
       "Cover letter builder",
       "Design customization"
     ],
-    "icon": "https://lucide.dev/icons/file-text.svg"
+    "icon": "https://i.ibb.co.com/tT3P5c5M/5.png"
   },
   {
     "id": 6,
@@ -105,6 +105,6 @@
       "Engagement tracking",
       "Hashtag suggestions"
     ],
-    "icon": "https://lucide.dev/icons/share-2.svg"
+    "icon": "https://i.ibb.co.com/spM5VcWw/tool-6.png"
   }
 ]

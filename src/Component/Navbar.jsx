@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ subscribed }) => {
+const Navbar = ({ subscribed, handleTabClick }) => {
   return (
     <div className="navbar bg-base-100 shadow-sm justify-between px-20 mx-auto sticky top-0 z-10 mb-">
       <div>
@@ -28,7 +28,13 @@ const Navbar = ({ subscribed }) => {
         </ul>
       </div>
       <div className="flex justify-between gap-5">
-        <div className="flex-none">
+        <div
+          className="flex-none"
+          onClick={() => {
+            console.log("Cart clicked");
+            handleTabClick("Cart");
+          }}
+        >
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
