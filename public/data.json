@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "Content Creator Suite",
+    "lang": "Create blogs, captions, and marketing content using AI.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited content generation",
+      "SEO optimization tools",
+      "Built-in plagiarism checker",
+      "Multi-language support",
+      "Tone customization"
+    ],
+    "icon": "https://lucide.dev/icons/edit.svg"
+  },
+  {
+    "id": 2,
+    "name": "Creative Design Bundle",
+    "lang": "A complete pack of ready-to-use creative templates.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "3000+ templates",
+      "Drag & drop editor",
+      "Commercial license",
+      "Regular updates",
+      "Custom color themes"
+    ],
+    "icon": "https://lucide.dev/icons/palette.svg"
+  },
+  {
+    "id": 3,
+    "name": "Media Vault Pro",
+    "lang": "Access millions of high-quality images and videos.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "5M+ assets",
+      "HD & 4K downloads",
+      "No watermark",
+      "Advanced search filters",
+      "Daily new uploads"
+    ],
+    "icon": "https://lucide.dev/icons/image.svg"
+  },
+  {
+    "id": 4,
+    "name": "Workflow Automator",
+    "lang": "Automate repetitive tasks and streamline workflows.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ automation rules",
+      "Third-party integrations",
+      "Custom workflows",
+      "Real-time triggers",
+      "Error tracking"
+    ],
+    "icon": "https://lucide.dev/icons/settings.svg"
+  },
+  {
+    "id": 5,
+    "name": "CV Builder Expert",
+    "lang": "Build professional resumes easily and quickly.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "150+ CV templates",
+      "ATS-friendly formats",
+      "PDF export",
+      "Cover letter builder",
+      "Design customization"
+    ],
+    "icon": "https://lucide.dev/icons/file-text.svg"
+  },
+  {
+    "id": 6,
+    "name": "Social Growth Kit",
+    "lang": "Tools to manage and grow your social media presence.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Post scheduler",
+      "Analytics dashboard",
+      "Content calendar",
+      "Engagement tracking",
+      "Hashtag suggestions"
+    ],
+    "icon": "https://lucide.dev/icons/share-2.svg"
+  }
+]
