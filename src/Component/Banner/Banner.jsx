@@ -20,11 +20,11 @@ const Banner = () => {
           <div className="flex gap-6 flex-col sm:flex-row">
             <button
               className="btn bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white
-              font-semibold rounded-3xl"
+              font-semibold rounded-full"
             >
               Explore Products
             </button>
-            <button className="btn btn-outline btn-primary rounded-3xl">
+            <button className="btn btn-outline btn-primary rounded-full">
               <img src={DemoImg} alt="" /> Watch Demo{" "}
             </button>
           </div>

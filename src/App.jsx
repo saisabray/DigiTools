@@ -5,6 +5,7 @@ import Navbar from "./Component/Navbar";
 import Stats from "./Component/Stats";
 import Tools from "./Component/Tools/Tools";
 import GetStart from "./Component/GetStart/GetStart";
+import Pricing from "./Component/Pricing";
 
 const fetchItems = async () => {
   const res = await fetch("/data.json");
@@ -41,6 +42,7 @@ function App() {
         />
       </Suspense>
       <GetStart />
+      <Pricing/>
     </>
   );
 }
