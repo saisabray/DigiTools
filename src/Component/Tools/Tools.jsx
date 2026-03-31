@@ -13,7 +13,7 @@ const Tools = ({
   const items = use(itemsPromise);
 
   return (
-    <div className="mb-40 container mx-auto text-center flex flex-col gap-5">
+    <div className=" container mx-auto text-center flex flex-col gap-5">
       <h1 className="text-[48px] font-extrabold text-[#101727]">
         Premium Digital Tools
       </h1>

@@ -4,12 +4,14 @@ import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Navbar";
 import Stats from "./Component/Stats";
 import Tools from "./Component/Tools/Tools";
+import GetStart from "./Component/GetStart/GetStart";
 
 const fetchItems = async () => {
   const res = await fetch("/data.json");
   return res.json();
 };
 const itemsPromise = fetchItems();
+
 function App() {
   const [subscribed, setSubscribed] = useState([]);
   const [activeTab, setActiveTab] = useState("Products");
@@ -38,6 +40,7 @@ function App() {
           handleTabClick={handleTabClick}
         />
       </Suspense>
+      <GetStart />
     </>
   );
 }
