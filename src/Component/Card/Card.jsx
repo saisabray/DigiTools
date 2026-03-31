@@ -4,6 +4,14 @@ import Features from "../Features/Features";
 const Card = ({ item, subscribed, setSubscribed }) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const handleSubscribe = () => {
+    const alreadyExists = subscribed.find(
+      (subItem) => subItem.name === item.name,
+    );
+
+    if (alreadyExists) {
+      alert("Item already added to cart!");
+      return;
+    }
     setIsSubscribed(true);
     setSubscribed([...subscribed, item]);
   };
