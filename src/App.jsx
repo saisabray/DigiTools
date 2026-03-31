@@ -8,6 +8,7 @@ import GetStart from "./Component/GetStart/GetStart";
 import Pricing from "./Component/Pricing";
 import Workflow from "./Component/Workflow";
 import Footer from "./Component/Footer";
+import { ToastContainer } from "react-toastify";
 
 const fetchItems = async () => {
   const res = await fetch("/data.json");
@@ -46,7 +47,8 @@ function App() {
       <GetStart />
       <Pricing />
       <Workflow />
-      <Footer/>
+      <Footer />
+      <ToastContainer />
     </>
   );
 }

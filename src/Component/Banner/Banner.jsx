@@ -4,7 +4,7 @@ import DemoImg from "../../assets/main-assets/Play.png";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-screen px-5 md:px-10">
+    <div className="hero min-h-screen px-5 md:px-10 py-10 md:py-0">
       <div className="container mx-auto flex flex-col lg:flex-row-reverse md:my-10 items-center justify-between gap-10">
         <img
           className="w-full max-w-sm md:max-w-md lg:max-w-lg drop-shadow-xl"

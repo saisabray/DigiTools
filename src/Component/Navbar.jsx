@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = ({ subscribed, handleTabClick }) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm justify-between md:px-20 mx-auto sticky top-0 z-10 pr-5">
+    <div className="navbar bg-base-100 shadow-sm justify-between px-4 sm:px-6 md:px-10 lg:px-20 mx-auto sticky top-0 z-10 ">
       <div>
-        <a className="btn btn-ghost text-3xl font-bold bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+        <a className="btn btn-ghost text-2xl md:text-3xl font-bold bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
           DigiTools
         </a>
       </div>

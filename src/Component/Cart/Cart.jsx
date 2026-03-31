@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
+import { toast } from "react-toastify";
 
 const Cart = ({ subscribed, setSubscribed }) => {
   const [total, setTotal] = useState(0);
@@ -9,6 +10,7 @@ const Cart = ({ subscribed, setSubscribed }) => {
       (subscribedItem) => subscribedItem.name !== item.name,
     );
     setSubscribed(filteredItems);
+    toast.error("Successfully removed from cart!");
   };
 
   const calculatedTotal = subscribed.reduce((sum, item) => sum + item.price, 0);
@@ -52,12 +54,15 @@ const Cart = ({ subscribed, setSubscribed }) => {
             <span>Total:</span>
             <span>$ {calculatedTotal}</span>
           </div>
-          <button className="btn btn-primary" onClick={() => setSubscribed([])}>
+          <button className="btn btn-primary" onClick={() => {
+            setSubscribed([]);
+            toast.success("Successfully proceeded!");
+          }}>
             Add To Proceed
           </button>
         </div>
       ) : (
-        <div className="container mx-auto p-5 md:p-10 flex gap-3 flex-col justify-center items-center h-[350px] shadow-sm rounded-2xl">
+        <div className="container mx-auto p-5 md:p-10 flex gap-3 flex-col justify-center items-center h-[350px] shadow-sm rounded-2xl mb-30">
           <h1 className="font-bold text-2xl text-gray-300">
             Your Cart Is Empty
           </h1>

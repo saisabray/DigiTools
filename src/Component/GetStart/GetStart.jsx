@@ -5,7 +5,7 @@ import RocketImg from "../../assets/main-assets/rocket.png";
 const GetStart = () => {
   return (
     <div className="bg-gray-200">
-      <div className="container mx-auto  py-30 ">
+      <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col gap-5 mb-20">
           <h2 className="font-bold text-3xl md:text-[48px] text-[#101727] text-center">
             Get Started in 3 Steps

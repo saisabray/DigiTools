@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Features from "../Features/Features";
+import { toast } from "react-toastify";
 
 const Card = ({ item, subscribed, setSubscribed }) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -9,11 +10,12 @@ const Card = ({ item, subscribed, setSubscribed }) => {
     );
 
     if (alreadyExists) {
-      alert("Item already added to cart!");
+      toast.error("Item already added to cart!");
       return;
     }
     setIsSubscribed(true);
     setSubscribed([...subscribed, item]);
+    toast.success("Successfully added to cart!");
   };
   return (
     <div className="card bg-base-100 shadow-sm h-full text-start hover:cursor-pointer hover:scale-105 transition-transform duration-300 p-5">
