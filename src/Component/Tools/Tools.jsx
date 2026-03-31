@@ -1,7 +1,8 @@
 import React, { use, useState } from "react";
+import Cart from "../Cart/Cart";
 import Products from "../Products/Products";
 
-const Tools = ({ itemsPromise }) => {
+const Tools = ({ itemsPromise, subscribed, setSubscribed }) => {
   const items = use(itemsPromise);
   const [activeTab, setActiveTab] = useState("Products");
   const handleTabClick = (Tab) => {
@@ -19,7 +20,7 @@ const Tools = ({ itemsPromise }) => {
       <div className="bg-white shadow w-fit mx-auto rounded-full p-1 flex gap-1">
         <div className="flex justify-center items-center">
           <button
-            className={`px-6 py-2 rounded-full ${activeTab === "Products" ? "bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white" : "text-gray"}`}
+            className={`px-6 py-2 rounded-full ${activeTab === "Products" ? "bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white" : "text-gray-500"}`}
             onClick={() => {
               handleTabClick("Products");
             }}
@@ -27,18 +28,24 @@ const Tools = ({ itemsPromise }) => {
             Products
           </button>
           <button
-            className={`px-6 py-2 rounded-full ${activeTab === "Cart" ? "bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white" : "text-gray"}`}
+            className={`px-6 py-2 rounded-full ${activeTab === "Cart" ? "bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white" : "text-gray-500"}`}
             onClick={() => {
               handleTabClick("Cart");
             }}
           >
-            Cart
+            Cart ({subscribed.length})
           </button>
         </div>
       </div>
-      <div>
-        <Products items={items} />
-      </div>
+      {activeTab === "Products" ? (
+        <Products
+          items={items}
+          subscribed={subscribed}
+          setSubscribed={setSubscribed}
+        />
+      ) : (
+        <Cart subscribed={subscribed} setSubscribed={setSubscribed} />
+      )}
     </div>
   );
 };

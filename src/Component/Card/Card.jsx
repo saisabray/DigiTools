@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Features from "../Features/Features";
 
-const Card = ({ item }) => {
+const Card = ({ item, subscribed, setSubscribed }) => {
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const handleSubscribe = () => {
+    setIsSubscribed(true);
+    setSubscribed([...subscribed, item]);
+  };
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-sm h-full text-start ">
@@ -30,8 +35,11 @@ const Card = ({ item }) => {
               <Features features={item.features} />
             </ul>
             <div className="mt-6">
-              <button className="btn bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white w-full rounded-full">
-                Subscribe
+              <button
+                className="btn bg-gradient-to-r  from-[#4F39F6] to-[#9514FA] text-white w-full rounded-full"
+                onClick={handleSubscribe}
+              >
+                {isSubscribed ? "Subscribed" : "Buy Now"}
               </button>
             </div>
           </div>

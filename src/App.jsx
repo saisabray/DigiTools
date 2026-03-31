@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Navbar";
@@ -11,13 +11,19 @@ const fetchItems = async () => {
 };
 const itemsPromise = fetchItems();
 function App() {
+  const [subscribed, setSubscribed] = useState([]);
+
   return (
     <>
       <Navbar />
       <Banner />
       <Stats />
       <Suspense fallback="loading">
-        <Tools itemsPromise={itemsPromise} />
+        <Tools
+          itemsPromise={itemsPromise}
+          subscribed={subscribed}
+          setSubscribed={setSubscribed}
+        />
       </Suspense>
     </>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 
 const Features = ({ features }) => {
-  console.log(features);
   return (
     <div>
       {features.map((feature, index) => (
