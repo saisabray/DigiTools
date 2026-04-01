@@ -7,7 +7,7 @@ const Pricing = () => {
         <h2 className="font-bold text-2xl sm:text-3xl md:text-[48px] text-[#101727] text-center">
           Simple, Transparent Pricing
         </h2>
-        <p className="text-base text-[#627382] text-center flex flex-wrap">
+        <p className="text-base text-[#627382] text-center flex flex-wrap md:flex-nowrap justify-center">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
@@ -225,7 +225,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="card hover:scale-105 transition-transform duration-300 w-full bg-base-100 shadow-sm md:col-span-1 lg:col-span-1 flex justify-center items-center">
+        <div className="card hover:scale-105 transition-transform duration-300 w-full bg-base-100 shadow-sm md:col-span-1 lg:col-span-1">
           <div className="card-body">
             <h2 className="text-3xl font-bold">Enterprise</h2>
             <p>For teams and businesses</p>

@@ -17,7 +17,7 @@ const Tools = ({
       <h1 className="text-[32px] md:text-[48px] font-extrabold text-[#101727]">
         Premium Digital Tools
       </h1>
-      <p className="text-base md:text-[24px] text-[#627382]">
+      <p className="text-base text-[#627382]">
         Choose from our curated collection of premium digital products designed
         to boost your productivity and creativity.
       </p>
