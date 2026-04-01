@@ -7,7 +7,9 @@ DigiTools is a modern web-based platform that provides a collection of powerful 
 
 DigiTools is built to help users access multiple useful tools without switching between different websites or applications. It focuses on speed, simplicity, and usability, making everyday digital tasks faster and more efficient.
 
-🛠️ Technologies Used
+🛠️ Technologies
+🙂DaisyUI
+🍞toastify
 ⚛️ React.js
 🎨 Tailwind CSS
 📦 JavaScript (ES6+)
